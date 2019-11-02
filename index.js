@@ -1,6 +1,11 @@
-var myCurrentAge = 25;
-var result = (myCurrentAge >= 25) ? "I am over 25 yers" : "I am under 25 yers";
-console.log(result);
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Your age must be filled out");
+    } else if (x >= 25) {
+        document.write('I am over 25 years old');
+    } else {
+        document.write('I am under 25')
 
-var myAge = 25;
-if (myAge >= 25) { console.log('I am over 25 yers'); } else { console.log('I am under 25 yers'); }
+    }
+}
